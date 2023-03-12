@@ -139,7 +139,7 @@
   - [ ] 3.2 设置该文件为所有用户可以访问
    `chown a+x /etc/init.d/nginx`（a 是all的意思，x 是execute的意思）
    #### 4.部署一个静态文件
-  - [ ]4.1 打开安装目录下的配置文件（这里是：/usr/loacal/nginx/conf/nginx.conf）
+  - [ ] 4.1 打开安装目录下的配置文件（这里是：/usr/loacal/nginx/conf/nginx.conf）
   `vi nginx.conf`
    在location中配置路径和页面，如下
    ```
@@ -166,7 +166,9 @@
 ### 三、维护
 
 ### 参考
-1. 离线安装
+1. 官网
+   - http://nginx.org/en/download.html
+   - https://nginx.p2hp.com/
+2. 离线安装
    - https://developer.aliyun.com/article/1130619
    - https://www.runoob.com/linux/nginx-install-setup.html
-  
