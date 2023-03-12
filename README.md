@@ -1,4 +1,4 @@
-## <center> linux部署.Net </center>
+## <p align="center"> linux部署.Net </p>
 ----------------------------------------
 ### 一、环境部署
 #### [1.  mysql](https://github.com/chi8708/Linux-.Net/blob/main/linux%E9%83%A8%E7%BD%B2mysql.md)
