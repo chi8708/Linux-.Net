@@ -4,7 +4,7 @@
 2. 
    * 查看是否安装成功`rpm -q mysql` 或`yum list installed|grep mysql`。
    * 查看位置`whereis mysql`
-3. 初始化，修改表面不区分大小写`mysqld --initialize --user=mysql --lower-case-table-names=1`
+3. 初始化，修改表名不区分大小写`mysqld --initialize --user=mysql --lower-case-table-names=1`
 4. 启动服务`service mysqld start`
 5. * 查看服务运行状态 `systemctl|grep mysql`
 6. 进入客户端。`mysql -u root -p` ,一般会创建个为空的密码。若密码不正确从日志文件`cat -n /var/log/mysql/mysqld.log`中查找
