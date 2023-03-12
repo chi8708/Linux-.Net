@@ -1,3 +1,5 @@
+## linux部署mysql
+-----------------------------
 ### 一、安装
 #### 1. 在线安装
 1. `yum -y install mysql-server`
