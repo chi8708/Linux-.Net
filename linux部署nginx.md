@@ -164,6 +164,12 @@
 
 
 ### 二、常见问题
+1. 静态文件压缩，修改配置文件
+   ``` gzip on;
+	 gzip_min_length 100;
+	 gzip_types text/plain text/css application/xml application/javascript;
+	 gzip_vary on;
+    ```
 
 ### 三、维护
 
