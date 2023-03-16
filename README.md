@@ -28,13 +28,11 @@ public static IHostBuilder CreateHostBuilder(string[] args)
         }
 ```
 - 1.3 配置运行端口：修改appsettings.json,添加节点` "Urls": "http://*:8916;"`
-- 1.4 发布：选择项目点击右键发布
-<img src="./image/apifb.jpg">
-- 1.5 通过 xftp将项目复制到1.1服务配置对应目录下。（服务目录详细查看
- `systemctl status CNetWebapi  `,查看配置`cat -n /etc/systemd/system/CNetWebapi.service`）。
-- 启动服务 `systemctl start CNetWebapi`
-- 测试：`telnet 127.0.0.1 8916` 或`curl http://127.0.0.1:8916`
-- 1.6 开放外网访问端口，云服务器可从web控制台操作。
+- 1.4 发布：选择项目点击右键发布<img src="./image/apifb.jpg">
+- 1.5 通过 xftp将项目复制到1.1服务配置对应目录下。（服务目录详细查看`systemctl status CNetWebapi`,查看配置`cat -n /etc/systemd/system/CNetWebapi.service`）。
+- 1.6 启动服务 `systemctl start CNetWebapi`
+- 1.7 测试：`telnet 127.0.0.1 8916` 或`curl http://127.0.0.1:8916`
+- 1.8 开放外网访问端口，云服务器可从web控制台操作。
 
 #### 2. 前端代码
 - 2.1 运行依赖；linux服务器先 [安装nginx](./linux%E9%83%A8%E7%BD%B2nginx.md)
