@@ -43,7 +43,7 @@
    - [ ] 2.7 启动nginx：
    `cd /usr/local/nginx/sbin`
    `./nginx`
-    - [ ] 2.8 查询nginx进场：`ps aux|grep nginx`
+    - [ ] 2.8 查询nginx进程：`ps aux|grep nginx`
    后面跟着./nginx是主进程
    另一个则是工作进程
     - [ ] 2.8 停止nginx

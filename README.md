@@ -4,6 +4,7 @@
 #### [1.  mysql](https://github.com/chi8708/Linux-.Net/blob/main/linux%E9%83%A8%E7%BD%B2mysql.md)
 #### [2.  nginx](./linux%E9%83%A8%E7%BD%B2nginx.md)
 #### [3.  .Net](./linux%E9%83%A8%E7%BD%B2.Net.md)
+#### [4.  https](./dotnet%E8%AE%BE%E7%BD%AEhttps.md)
 ------------------------------
 ### 二、前后端分离项目部署
 #### 本示例以[CNet权限管理系统](https://github.com/chi8708/CNet_Admin)为例
@@ -33,6 +34,7 @@ public static IHostBuilder CreateHostBuilder(string[] args)
 - 1.6 启动服务 `systemctl start CNetWebapi`
 - 1.7 测试：`telnet 127.0.0.1 8916` 或`curl http://127.0.0.1:8916`
 - 1.8 开放外网访问端口，云服务器可从web控制台操作。
+- 1.9 若要使用https参考[dtonet设置https](./dotnet%E8%AE%BE%E7%BD%AEhttps.md)
 
 #### 2. 前端代码
 - 2.1 运行依赖；linux服务器先 [安装nginx](./linux%E9%83%A8%E7%BD%B2nginx.md)
