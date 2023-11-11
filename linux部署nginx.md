@@ -55,7 +55,7 @@
    `./nginx -s reload`
    用于改动了nginx.conf 后重新加载配置文件，使配置文件生效。
    - [ ] 2.10 测试是否成功（ip+80默认端口）
-  #### 3.开机自启动nginx
+#### 3.开机自启动nginx
  - [ ] 3.1 vi /etc/init.d/nginx 输入下面内容
    作用：可以直接使用此处脚本对ng进行操作，如
    查看状态：/etc/init.d/nginx status
@@ -139,8 +139,8 @@
       exit $RETVAL
    ```
   - [ ] 3.2 设置该文件为所有用户可以访问
-   `chown a+x /etc/init.d/nginx`（a 是all的意思，x 是execute的意思）
-   #### 4.部署一个静态文件
+   `chmod a+x /etc/init.d/nginx`（a 是all的意思，x 是execute的意思）
+#### 4.部署一个静态文件
   - [ ] 4.1 打开安装目录下的配置文件（这里是：/usr/loacal/nginx/conf/nginx.conf）
   `vi nginx.conf`
    在location中配置路径和页面，如下
@@ -162,7 +162,6 @@
  - [ ] 4.3 测试。查看端口是否通` telnet 127.0.0.1 8918`。
   调用`curl http://127.0.0.1:8918`或`wget http://127.0.0.1:8918`
 
-
 ### 二、常见问题
 1. 静态文件压缩，修改配置文件
    ``` gzip on;
@@ -170,8 +169,14 @@
 	 gzip_types text/plain text/css application/xml application/javascript;
 	 gzip_vary on;
     ```
+2. ./nginx: Permission denied 权限不够
 
 ### 三、维护
+1.常用命令  whereis nginx 查看nginx目录(在sbin下运行)
+- 进入该路径：`cd /usr/local/nginx/sbin` ,启动nginx 命令： `./nginx `
+- 查看nginx的状态 `ps -ef | grep nginx` 出现master则启动成功
+- 重启：`./nginx -s reload`
+- 停用：`./nginx -s stop`
 
 ### 参考
 1. 官网

@@ -16,7 +16,7 @@
 #### 1. 云服务器远程登录mysql
 1. 通过控制台把3306端口打开。
 2. 创建%用户 `mysql> CREATE USER 'cts'@'%' IDENTIFIED BY 'Hadoop3!';`
-3. 用户授权 `mysql> grant all privileges on . to 'cts'@'%';`。刷新权限flush privileges;
+3. 用户授权 `mysql> grant all privileges on *.* to 'cts'@'%';`。刷新权限flush privileges;
 4. 使用Navicat进行连接
 #### 2.mysql表名不区分大小写
  1. mysql8以后修改/etc/my.cnf  重启服务没有作用，mysql8后需重新初始化。查看配置` show VARIABLES like '%lower_case_table_names%'`
