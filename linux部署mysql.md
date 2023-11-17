@@ -34,6 +34,9 @@
  1. 初始化mysql
 `sudo mysqld --defaults-file=/etc/my.cnf --initialize --user=mysql --basedir=/var/lib/mysql --datadir=/var/lib/mysql`
 
+#### 3.centos mysql忘记密码（默认为空）
+   查看mysql日志 cat -n /var/log/mysql/mysqld.log
+修改密码：ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 ### 三、维护
 1. 默认文件
    * 1.配置文件 /etc/my.cnf  
