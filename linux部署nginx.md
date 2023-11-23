@@ -41,7 +41,7 @@
    conf下面是配置文件，主要是nginx.conf
    sbin下面是nginx文件。
    - [ ] 2.7 启动nginx：
-   `cd /usr/local/nginx/sbin`
+   `cd /usr/local/nginx/sbin`, centos8 在(/usr/sbin)目录下
    `./nginx`
     - [ ] 2.8 查询nginx进程：`ps aux|grep nginx`
    后面跟着./nginx是主进程
