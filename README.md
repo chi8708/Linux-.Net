@@ -60,3 +60,9 @@ server {
 - 2.7 运行nginx 进入sbin目录./nginx
 - 2.8 测试：`telnet 127.0.0.1 8918` 或 `curl http://127.0.0.1:8918`
 - 2.9 开放外网访问端口，云服务器可从web控制台操作。
+
+应用案例
+-----------
+AI口红试妆小程序管理后台
+<br/>
+<img src="https://github.com/chi8708/DotNetDemoAll/blob/master/lipStick.jpg" style="width:260px;" />
