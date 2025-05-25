@@ -32,12 +32,13 @@
 # 三、使用https
 1. 使用cloudflare的https服务，可以自动为网站启用https，提高网站的安全性。
 2. **配置步骤：**
+    1. A记录使用代理，使用后将使用边缘证书，http无法访问。
     1. 在cloudflare控制台，进入SSL/TLS概述页面，选择“完全”模式。
     ![alt text](image/image-1.png)
     2. 创建“边缘证书”（到期会自动创建），用于加密访问者和 Cloudflare。
-    3. 创建“源服务器证书”，将内容保存未 www.yourdomain.com.key 和 www.yourdomain.com.pem。
+    3. ~~创建“源服务器证书”，将内容保存未 www.yourdomain.com.key 和 www.yourdomain.com.pem。~~
     ![alt text](image/image-2.png)
-    4. 将证书内容复制到服务器，并配置nginx
+    4. ~~将证书内容复制到服务器，并配置nginx~~
     ![alt text](image/image-3.png)
 
     5. 访问https://www.yourdomain.com，可以看到网站已经启用了https。
@@ -45,7 +46,7 @@
 
 
 # <span style="color: #FF0000;">常见问题</span>
-1. **Cloudflare配置ssl后导致http无法访问网站。**
+1. ~~**Cloudflare配置ssl后导致http无法访问网站。**~~
     1. 检查DNS解析：A记录不要使用代理。
     2. 边缘证书配置：关闭“始终使用HTTPS”和HSTS传输.
     ![alt text](image/image-5.png)
