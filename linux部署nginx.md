@@ -171,6 +171,21 @@
     ```
 2. ./nginx: Permission denied 权限不够
 
+3. nginx重启输入./nginx -s reload后报错 nginx: [error] invalid PID number "" in "/run/nginx.pid"。
+ 解决方法优雅地停止所有 Nginx 进程，然后重新启动
+   ```
+   # 使用 pkill 命令停止所有 nginx 进程
+   sudo pkill -9 nginx
+
+   # 再次检查是否还有 nginx 进程残留
+   ps aux | grep nginx
+
+   # 确认没有进程后，重新启动 nginx
+   sudo systemctl start nginx
+   # 或者
+   sudo /usr/sbin/nginx
+   ```
+
 ### 三、维护
 1.常用命令  whereis nginx 查看nginx目录(在sbin下运行)
 - 进入该路径：`cd /usr/local/nginx/sbin` ,启动nginx 命令： `./nginx `
